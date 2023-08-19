@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+<script></script>
+    
+    <meta name="viewport" content="width=device-width,initial-scale">
+</head>
+<body>
+     <div class="first">
+        
+       
+      <h1 class="pp">  بسم الله الرحمن الرحيم والصلاة والسلام على اشرف المرسلين اعزائي الطلبة <br> هذا الموقع  هو مسهل للطلبة الجدد الذين يدرسون سنة اولى  علوم وتكنولوجيا</h1>
+      <h2 class="ar" >تم انجازه من طرف الطالب<span class="ss">:صخري سراج الدين محمد</span></h2>
+      <i class="fa-solid fa-flask-round-poison"></i>
+      <i class="fa-regular fa-flask-round-poison" style="color: #37ff0f;"></i>
+       <button class="sz"><a href="index2.html">المواد "les modules"</a>  </button>
+       <h2 class="ar"><span class="bn">ملاحظة </span>:الموقع يدعم دروس الفصل الاول فقط وعن قريب يتم ادراج الفصل الثاني انشاء الله</h2>
+       
+</div>
+
+<div class="container">
+    <span id="hours">00</span>
+    <span>:</span>
+    <span id="minutes">00</span>
+    <span>:</span>
+    <span id="seconds">00</span>
+    <span id="session">AM</span>
+</div>
+
+<script>
+function displayTime(){
+    var dateTime = new Date();
+    var hrs = dateTime.getHours();
+    var min = dateTime.getMinutes();
+    var sec = dateTime.getSeconds();
+    var session = document.getElementById('session');
+
+    if(hrs >= 12){
+        session.innerHTML = 'PM';
+    }else{
+        session.innerHTML = 'AM';
+    }
+
+    if(hrs > 12){
+        hrs = hrs - 12;
+    }
+
+    document.getElementById('hours').innerHTML = hrs;
+    document.getElementById('minutes').innerHTML = min;
+    document.getElementById('seconds').innerHTML = sec;
+}
+setInterval(displayTime, 10);
+</script>
+    
+</body>
+</html>
