@@ -1,1 +1,1 @@
-# elmajorst.github.io
+# elmajorst.com
